@@ -1,0 +1,152 @@
+.techno-container {
+  display: grid;
+  grid-template: 5px 200px 270px 270px 80px / 1fr 420px 420px 420px 1fr;
+  background: #f7f7f7;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.text {
+  padding-top: 50px;
+  grid-row: 2/2;
+  grid-column: 2/5;
+}
+.t01 {
+  grid-row: 3/3;
+  grid-column: 2/2;
+}
+.t02 {
+  grid-row: 3/3;
+  grid-column: 3/3;
+}
+.t03 {
+  grid-row: 3/3;
+  grid-column: 4/4;
+}
+.t04 {
+  grid-row: 4/4;
+  grid-column: 2/2;
+}
+.t05 {
+  grid-row: 4/4;
+  grid-column: 3/3;
+}
+.t06 {
+  grid-row: 4/4;
+  grid-column: 4/4;
+}
+
+.t01 img,
+.t02 img,
+.t03 img,
+.t06 img {
+  width: 150px;
+  height: 150px;
+}
+
+.t04 img {
+  width: 280px;
+  height: 198px;
+}
+
+.t05 img {
+  width: 280px;
+}
+
+.technology {
+  border-radius: 20px;
+  width: 390px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(50, 168, 168);
+}
+
+.technology:hover {
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  border: 0px;
+  background: url(../images/stars.svg) #2c313a;
+}
+
+@media screen and (max-width: 1025px) {
+  .techno-container {
+    grid-template: 5px 200px 270px 270px 80px / 1fr 300px 300px 300px 1fr;
+  }
+
+  .technology {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .techno-container {
+    grid-template: 5px 200px 270px 270px 270px 80px / 1fr 300px 0px 300px 1fr;
+  }
+
+  .t02 {
+    grid-column: 4/4;
+  }
+  .t03 {
+    grid-row: 4/4;
+    grid-column: 2/2;
+  }
+  .t04 {
+    grid-row: 4/4;
+    grid-column: 4/4;
+  }
+  .t05 {
+    grid-row: 5/5;
+    grid-column: 2/2;
+  }
+  .t06 {
+    grid-row: 5/5;
+    grid-column: 4/4;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .create-title {
+    font-size: 30px;
+  }
+
+  .techno-container {
+    grid-template: 50px 250px 270px 270px 270px 270px 270px 270px 80px/ 1fr 0px 300px 0px 1fr;
+  }
+
+  .t01 {
+    grid-row: 3/3;
+    grid-column: 3/3;
+  }
+  .t02 {
+    grid-row: 4/4;
+    grid-column: 3/3;
+  }
+  .t03 {
+    grid-row: 5/5;
+    grid-column: 3/3;
+  }
+  .t04 {
+    grid-row: 6/6;
+    grid-column: 3/3;
+  }
+  .t05 {
+    grid-row: 7/7;
+    grid-column: 3/3;
+  }
+  .t06 {
+    grid-row: 8/8;
+    grid-column: 3/3;
+  }
+
+  .technology {
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.5);
+    background: url(../images/stars.svg) #2c313a;
+  }
+
+  .technology:hover {
+    background: rgb(50, 168, 168);
+  }
+}

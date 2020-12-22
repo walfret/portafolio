@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Architects Daughter", cursive;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.App-logo {
+  height: 40px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container-home {
+  width: 100%;
+  height: 100%;
+  background: url(../images/astronauta-perdido-en-el-espacio-5498-1.png);
+  background-size: 1526px 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: grid;
+  grid-template: 1fr 595px 1fr / 1fr 800px 1fr;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  grid-row: 1/1;
+  grid-column: 1/4;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.links figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a,
+.links nav {
+  width: 220px;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.links section {
+  display: flex;
+}
+
+.links section nav div {
+  border-radius: 15px;
+  width: 220px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(32, 33, 36, 0.28);
+}
+
+.links section div label {
+  position: relative;
+  top: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.links section nav div:hover {
+  transform: scale(1.1);
+  background: url(../images/stars.svg) #282c34;
+  border: none;
+}
+
+.welcome {
+  grid-row: 2/2;
+  grid-column: 1/4;
+  align-self: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 0px;
+}
+
+.welcome h2 {
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 3/3;
+  grid-column: 1/4;
+  align-self: flex-end;
+}
+
+.social p {
+  align-self: flex-end;
+  padding: 8px;
+}
+
+.redes a {
+  width: 50px;
+  height: 50px;
+}
+
+.redes a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: white;
+  margin: 0px 10px 5px 0px;
+}
+
+.redes a img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1441px) {
+  .container-home {
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container-home {
+    grid-template: 1fr 595px 1fr / 1fr 700px 1fr;
+  }
+
+  .links {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container-home {
+    grid-template: 1fr 595px 1fr / 1fr 424px 1fr;
+    background-size: 1526px 100%;
+  }
+
+  .links {
+    max-width: 425px;
+  }
+
+  .links section {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 200px;
+  }
+
+  .links figure img {
+    height: 60px;
+  }
+
+  .links figure p {
+    font-size: 30px;
+    color: black;
+  }
+
+  .welcome {
+    padding: 0;
+  }
+
+  .welcome h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container-home {
+    grid-template: 1fr 595px 1fr / 1fr 374px 1fr;
+    background-size: 1526px 100%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .container-home {
+    grid-template: 1fr 595px 1fr / 1fr 319px 1fr;
+    background-size: 1526px 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .container-home {
+    grid-template: 1fr 595px 1fr / 1fr 319px 1fr;
+    background-size: 1526px 100%;
+  }
+
+  .links a,
+  .links nav {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,37 @@
+.create-container {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  position: relative;
+}
+
+.create-avatar {
+  width: 120px;
+  height: 120px;
+  background: url(./components/images/espacio.svg);
+  background-repeat: no-repeat;
+  background-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 25px;
+  position: fixed;
+  z-index: 100;
+  bottom: 5px;
+  right: 5px;
+}
+
+@media screen and (max-width: 1025px) {
+  .create-container {
+    width: 80px;
+    height: 80px;
+  }
+  .create-avatar {
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+    font-size: 20px;
+  }
+}

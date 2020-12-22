@@ -1,0 +1,114 @@
+.hero {
+  background: url(../images/hppavilion15_5-100827768-large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 630px;
+}
+
+.hero div {
+  display: grid;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.6);
+  grid-template: repeat(3, 1fr) / 1fr 150px 60px 150px 1fr;
+}
+
+.hero div p {
+  font-size: 80px;
+  color: white;
+  margin: 0;
+  grid-row: 2/2;
+  grid-column: 2/5;
+}
+
+.xwing {
+  width: 70px;
+  height: 70px;
+  grid-row: 1/1;
+  grid-column: 3/3;
+  padding-top: 50px;
+}
+
+.xwing:hover {
+  padding: 0px 50px 50px 0px;
+  transform: scale(1.1);
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.container-button {
+  display: grid;
+  grid-template: 50px / 1fr 80px 1fr;
+  position: relative;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282c34;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  position: relative;
+  bottom: 40px;
+  background-image: url(../images/stars.svg);
+  background-size: 800px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.button:hover {
+  transform: translateY(-8px);
+  background-color: black;
+}
+
+.button img {
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    background-size: unset;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .hero {
+    align-items: unset;
+    height: 500px;
+  }
+
+  .hero div {
+    background-color: transparent;
+    grid-template: 100px 150px 150px / 1fr 150px 60px 150px 1fr;
+  }
+
+  .xwing {
+    padding-top: 20px;
+  }
+
+  .hero div p {
+    font-size: 50px;
+  }
+
+  .container-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .hero div {
+    grid-template: 100px 150px 150px / 1fr 115px 70px 115px 1fr;
+  }
+}

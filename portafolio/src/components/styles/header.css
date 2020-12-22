@@ -1,0 +1,140 @@
+.header {
+  background-color: #282c34;
+  background-image: url(../images/stars.svg);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.header div {
+  display: flex;
+}
+
+.burger-button {
+  width: 70px;
+  height: 70px;
+  background: url(../../menu.svg);
+  background-size: 70px;
+  position: fixed;
+  right: 5px;
+  top: 70px;
+  z-index: 100;
+  display: none;
+}
+
+.header .nav-words {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 25px;
+}
+
+.header .nav-words:hover {
+  color: rgb(50, 168, 168);
+  font-size: 30px;
+}
+
+.cr {
+  font-size: 28px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.facebook {
+  background-color: #282c34;
+  background-image: url(../images/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.instagram {
+  background-color: #282c34;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.github {
+  background-color: #282c34;
+  background-image: url(../images/github.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.whats {
+  background-color: #282c34;
+  background-image: url(../images/whatsapp1.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .header .nav-words {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    position: relative;
+  }
+  .nav-words {
+    position: absolute;
+  }
+
+  .header div {
+    position: relative;
+  }
+
+  .burger-button {
+    display: block;
+  }
+
+  .menu {
+    background: rgba(5, 111, 255, 0.9);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .menu.is-active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .social-link {
+    margin-left: 10px;
+  }
+
+  .whats {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .cr {
+    font-size: 0;
+  }
+}

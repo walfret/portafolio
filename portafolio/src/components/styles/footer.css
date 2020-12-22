@@ -1,0 +1,78 @@
+.footer {
+  background: url(../images/stars.svg) #282c34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.nave {
+  width: 200px;
+  margin: 0px 0px 0px 100px;
+  transform: rotate(45deg);
+}
+
+.footer .list-items {
+  margin-right: 50px;
+}
+
+.footer div ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer div ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 30px 0px 10px;
+  font-size: 25px;
+}
+
+.footer div ul li a:hover {
+  color: rgb(50, 168, 168);
+  font-size: 35px;
+}
+
+.footer div ul li img {
+  width: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+  .nave {
+    width: 150px;
+  }
+
+  .footer .list-items {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer {
+    display: grid;
+    grid-template: 220px 1fr / 1fr 220px 1fr;
+    padding: 0;
+  }
+
+  .footer .nave {
+    margin: 0;
+    grid-row: 1/1;
+    grid-column: 2/2;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .list-items {
+    grid-row: 2/2;
+    grid-column: 2/2;
+  }
+
+  .list-items ul {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .list-items ul li {
+    margin-top: 20px;
+  }
+}
