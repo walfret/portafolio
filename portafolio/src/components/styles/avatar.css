@@ -1,10 +1,15 @@
-.page-avatar {
+.container-avatarPages {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #f6f6f6;
   width: 100%;
   height: 100%;
+  padding-top: 30px;
+}
+
+.page-avatar {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
 }
 
 .container-avatar {
@@ -99,6 +104,12 @@
   font-size: 20px;
   margin-top: 20px;
   padding: 5px 15px 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-avatarPages {
+    display: grid;
+  }
 }
 
 @media screen and (max-width: 426px) {

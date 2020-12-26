@@ -93,33 +93,39 @@ a {
   .header {
     position: relative;
   }
-  .nav-words {
-    position: absolute;
-  }
-
-  .header div {
-    position: relative;
-  }
 
   .burger-button {
     display: block;
   }
 
   .menu {
-    background: rgba(5, 111, 255, 0.9);
-    z-index: 3;
-    top: 0;
-    left: -100vw;
+    position: fixed;
+    background: rgba(41, 137, 137, 0.7);
+    z-index: 100;
+    height: 100vh;
     width: 100vw;
-    bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    align-items: center;
   }
 
-  .menu.is-active {
-    left: 0;
+  .menu nav {
+    width: 30vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu .nav-words {
+    flex-wrap: wrap;
+    margin: 20px;
+    font-size: 35px;
+  }
+
+  .header .nav-words:hover {
+    font-size: 40px;
   }
 }
 
