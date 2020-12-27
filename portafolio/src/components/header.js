@@ -28,7 +28,7 @@ class header extends React.Component {
             style={{ bottom: this.state.show === true ? 0 : "-250vw" }}
           >
             <nav>
-              <Link className="nav-words" to="/">
+              <Link className="nav-words" to="/portafolio">
                 Home
               </Link>
               <a className="nav-words" href="#acerca">
