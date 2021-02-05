@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Home from "./components/home";
 import Layout from "./components/layout";
 import Header from "./components/header";
-import Hero from "./components/hero";
+import Api from "./components/juego";
 import Avatar from "./components/avatar";
 import About from "./components/about";
 import Technologies from "./components/technologies";
@@ -17,9 +17,10 @@ class App extends React.Component {
       <BrowserRouter>
         <React.Fragment>
           <Switch>
+            <Redirect exact from="/" to="/portafolio" />
             <Route exact path="/portafolio" component={Home} />
             <Route exact path="/me" component={Layout} />
-            <Route exact path="/me/" component={Hero} />
+            <Route exact path="/api" component={Api} />
             <Route exact path="/me/avatar" component={Avatar} />
             <Route exact path="/me/inicio" component={Header} />
             <Route exact path="/me/acerca" component={About} />
