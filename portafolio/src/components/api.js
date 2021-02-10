@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Provider } from "react-redux";
+import store from "../store";
+import Juego from "./juego";
 import logo from "../logo.svg";
-import "./styles/header.css";
 
-class header extends React.Component {
+import RickandMorty from "./rickandmorty";
+
+class Api extends React.Component {
   state = {
     show: false,
   };
@@ -31,17 +35,8 @@ class header extends React.Component {
               <Link className="nav-words" to="/portafolio">
                 Home
               </Link>
-              <a className="nav-words" href="#acerca">
-                Acerca
-              </a>
-              <a className="nav-words" href="#tecnologias">
-                Tecnologias
-              </a>
-              <a className="nav-words" href="#contacto">
-                Contacto
-              </a>
-              <Link className="nav-words" to="/api">
-                Juego
+              <Link className="nav-words" to="/me">
+                Mas acerca
               </Link>
             </nav>
           </div>
@@ -69,9 +64,18 @@ class header extends React.Component {
             ></i>
           </div>
         </div>
+        <Provider store={store}>
+          <Juego />
+        </Provider>
+        <RickandMorty />
+        <div className="create-container">
+          <Link to="/me/avatar">
+            <div className="create-avatar">Crea tu avatar</div>
+          </Link>
+        </div>
       </React.Fragment>
     );
   }
 }
 
-export default header;
+export default Api;

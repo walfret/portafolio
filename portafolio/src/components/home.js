@@ -20,6 +20,13 @@ class home extends React.Component {
             </figure>
             <section>
               <nav>
+                <Link to="/api">
+                  <div>
+                    <label>Juego con api</label>
+                  </div>
+                </Link>
+              </nav>
+              <nav>
                 <Link to="/me">
                   <div>
                     <label>Mas Acerca De Mi</label>

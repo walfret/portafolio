@@ -20,6 +20,7 @@ class avatarForm extends React.Component {
               name="firstName"
               value={this.props.formValues.firstName}
               placeholder="First name"
+              required
               autoFocus
             />
           </div>
@@ -32,6 +33,7 @@ class avatarForm extends React.Component {
               name="lastName"
               value={this.props.formValues.lastName}
               placeholder="Last name"
+              required
             />
           </div>
           <div className="form-group">
@@ -43,6 +45,7 @@ class avatarForm extends React.Component {
               name="email"
               value={this.props.formValues.email}
               placeholder="walfret69@gmail.com"
+              required
             />
           </div>
           <div className="form-group">
@@ -64,7 +67,7 @@ class avatarForm extends React.Component {
               type="text"
               name="twitter"
               value={this.props.formValues.twitter}
-              placeholder="@example"
+              placeholder="example"
             />
           </div>
           <button onClick={this.handleClick}>Guardar</button>

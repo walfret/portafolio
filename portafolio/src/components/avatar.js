@@ -35,6 +35,9 @@ class avatar extends React.Component {
               <Link className="nav-words" to="/me">
                 Mas acerca
               </Link>
+              <Link className="nav-words" to="/api">
+                Juego
+              </Link>
             </nav>
           </div>
           <div>

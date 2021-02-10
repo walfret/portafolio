@@ -3,11 +3,11 @@ import { connect } from 'react-redux'
 
 const hombre = ({ hombres, quitarDeH }) => (
     <section>
-        <h2>Hombres</h2>
+        <h1 className="margin">Hombres</h1>
         {
             hombres.map(j => (
                 <article key={j.id}>
-                    <div>
+                    <div className="margin">
                         <h3>{j.nombre}</h3>
                         <h4>{j.edad} años</h4>
                         <button onClick={() => quitarDeH(j)}>X</button>

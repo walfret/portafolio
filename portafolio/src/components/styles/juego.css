@@ -1,0 +1,38 @@
+.container-game {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.container-game .margin {
+  margin: 30px 0px 0px;
+}
+
+.rickAndMorty {
+  text-align: center;
+  justify-self: center;
+}
+
+.character-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.character-container section {
+  width: 180px;
+  height: 212px;
+}
+
+.img-character {
+  width: 150px;
+  height: 150px;
+}
+
+.see-more {
+  height: 70px;
+  display: initial;
+  margin-top: 0;
+}

@@ -18,7 +18,7 @@ const initialState = {
       edad: 23,
     },
     {
-      id: 3,
+      id: 4,
       nombre: "Maria Barros",
       edad: 22,
     },

@@ -3,14 +3,16 @@ import { connect } from "react-redux";
 import Hombre from './hombre';
 import Mujer from './mujer';
 
+import "./styles/juego.css";
+
 const juego = ({ jugadores, agregarH, agregarM }) => (
-    <section>
-        <div className="container-juego">
-           <h2>Juego Api</h2>
+    <section className="container-game">
+        <div>
+            <h1 className="margin">Juego Api</h1>
             {
                 jugadores.map(j => (
                     <article key={j.id}>
-                        <h3>Nombre: {j.nombre} </h3>
+                        <h3 className="margin">Nombre: {j.nombre} </h3>
                         <p>Edad: {j.edad}</p>
                         <button onClick={() => agregarH(j)}>Hombre</button>
                         <button onClick={() => agregarM(j)}>Mujer</button>
