@@ -17,7 +17,7 @@ class layout extends React.Component {
         <Header />
         <Hero />
         <div className="create-container">
-          <Link to="/me/avatar">
+          <Link to="/avatar">
             <div className="create-avatar">Crea tu avatar</div>
           </Link>
         </div>

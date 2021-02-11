@@ -69,7 +69,7 @@ class Api extends React.Component {
         </Provider>
         <RickandMorty />
         <div className="create-container">
-          <Link to="/me/avatar">
+          <Link to="/avatar">
             <div className="create-avatar">Crea tu avatar</div>
           </Link>
         </div>

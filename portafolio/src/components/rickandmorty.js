@@ -42,6 +42,19 @@ class rickandmorty extends React.Component {
     }
   };
 
+  buttonCharacters = () => {
+    if (this.state.nextPage <= 34) {
+      return (
+        <button
+          className="button-social see-more"
+          onClick={() => this.fetchCharacters()}
+        >
+          Ver mas personajes
+        </button>
+      );
+    }
+  };
+
   render() {
     if (this.state.error) {
       return `Error: ${this.state.error.message}`;
@@ -70,14 +83,7 @@ class rickandmorty extends React.Component {
               <Loader />
             </div>
           )}
-          {!this.state.loading && (
-            <button
-              className="button-social see-more"
-              onClick={() => this.fetchCharacters()}
-            >
-              Ver mas personajes
-            </button>
-          )}
+          {!this.state.loading && this.buttonCharacters()}
         </div>
       </React.Fragment>
     );

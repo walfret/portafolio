@@ -14,10 +14,10 @@ class App extends React.Component {
         <React.Fragment>
           <Switch>
             <Redirect exact from="/" to="/portafolio" />
-            <Route exact path="/portafolio" component={Home} />
-            <Route exact path="/me" component={Layout} />
-            <Route exact path="/api" component={Api} />
-            <Route exact path="/me/avatar" component={Avatar} />
+            <Route path="/portafolio" component={Home} />
+            <Route path="/me" component={Layout} />
+            <Route path="/api" component={Api} />
+            <Route path="/avatar" component={Avatar} />
             <Route component={NotFound} />
           </Switch>
         </React.Fragment>

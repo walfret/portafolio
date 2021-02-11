@@ -7,6 +7,7 @@ import face from "./images/facebook-ori.svg";
 import insta from "./images/instagram-ori.svg";
 import whats from "./images/whatsapp.svg";
 import git from "../github-negro.svg";
+import github from "./images/github.svg";
 
 class home extends React.Component {
   render() {
@@ -34,7 +35,7 @@ class home extends React.Component {
                 </Link>
               </nav>
               <nav>
-                <Link to="/me/avatar">
+                <Link to="/avatar">
                   <div>Crear Tu Propio Avatar</div>
                 </Link>
               </nav>
@@ -47,8 +48,8 @@ class home extends React.Component {
             </h2>
           </div>
           <div className="social">
-            <p>Pagina creada con React.js</p>
             <div className="redes">
+              <p>Visita mis redes sociales:</p>
               <a href="https://www.facebook.com/walfret.bravo">
                 <img src={face} alt="" />
               </a>
@@ -62,6 +63,13 @@ class home extends React.Component {
                 <img src={git} alt="" />
               </a>
             </div>
+            <p>
+              El codigo de esta pagina esta aqui :
+              <a href="https://github.com/walfret/portafolio/tree/master/portafolio">
+                <img src={github} alt="" width={40} />
+              </a>
+            </p>
+            <p>Pagina creada con React.js</p>
           </div>
         </div>
       </React.Fragment>

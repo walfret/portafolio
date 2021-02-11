@@ -34,7 +34,7 @@
   background-position: center;
   text-align: center;
   display: grid;
-  grid-template: 1fr 595px 1fr / 1fr 800px 1fr;
+  grid-template: 1fr 545px 1fr / 1fr 700px 1fr;
 }
 
 .links {
@@ -111,6 +111,7 @@
   grid-row: 3/3;
   grid-column: 1/4;
   align-self: flex-end;
+  border-top: 1px solid white;
 }
 
 .social p {
@@ -149,6 +150,10 @@
   .links {
     flex-wrap: wrap;
   }
+
+  .social {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -159,14 +164,17 @@
 
   .links {
     max-width: 425px;
+    border: none;
   }
 
   .links section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .links section nav {
     margin-top: 20px;
-    height: 200px;
   }
 
   .links figure img {
@@ -185,6 +193,15 @@
   .welcome h2 {
     font-size: 28px;
     margin: 0;
+  }
+
+  .social {
+    border: none;
+  }
+
+  .redes {
+    width: 100%;
+    text-align: initial;
   }
 }
 
