@@ -29,7 +29,7 @@ class avatar extends React.Component {
             style={{ bottom: this.state.show === true ? 0 : "-250vw" }}
           >
             <nav>
-              <Link className="nav-words" to="/portafolio">
+              <Link className="nav-words" to="/">
                 Home
               </Link>
               <Link className="nav-words" to="/me">
