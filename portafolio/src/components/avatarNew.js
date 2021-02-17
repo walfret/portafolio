@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import './styles/avatar.css';
-import AvatarBadge from './badge-avatar';
-import AvatarForm from './avatarForm';
+import "./styles/avatar.css";
+import AvatarBadge from "./badge-avatar";
+import AvatarForm from "./avatarForm";
 
 class avatarNew extends React.Component {
   state = {
     loading: false,
     error: null,
     form: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      jobTitle: '',
-      twitter: '',
+      firstName: "",
+      lastName: "",
+      email: "",
+      jobTitle: "",
+      twitter: "",
     },
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
       form: {
         ...this.state.form,
@@ -26,9 +26,7 @@ class avatarNew extends React.Component {
     });
   };
 
-  handleSubmit = async e => {
-      alert("Button was clicked")
-  };
+  handleSubmit = async (e) => {};
 
   render() {
     return (
@@ -36,11 +34,11 @@ class avatarNew extends React.Component {
         <div className="container-avatarPages">
           <div>
             <AvatarBadge
-              firstName={this.state.form.firstName || 'FIRST_NAME'}
-              lastName={this.state.form.lastName || 'LAST_NAME'}
-              twitter={this.state.form.twitter || 'twitter'}
-              jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
-              email={this.state.form.email || 'EMAIL'}
+              firstName={this.state.form.firstName || "FIRST_NAME"}
+              lastName={this.state.form.lastName || "LAST_NAME"}
+              twitter={this.state.form.twitter || "twitter"}
+              jobTitle={this.state.form.jobTitle || "JOB_TITLE"}
+              email={this.state.form.email || "EMAIL"}
               avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
             />
           </div>

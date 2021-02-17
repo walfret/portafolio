@@ -70,7 +70,9 @@ class avatarForm extends React.Component {
               placeholder="example"
             />
           </div>
-          <button onClick={this.handleClick}>Guardar</button>
+          <button type="button" onClick={this.handleClick}>
+            Guardar
+          </button>
           {this.props.error && <p>{this.props.error.message}</p>}
         </form>
       </div>
