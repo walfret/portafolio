@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import store from "../store";
-import Juego from "./juego";
 import logo from "../logo.svg";
 
 import RickandMorty from "./rickandmorty";
@@ -65,7 +64,9 @@ class Api extends React.Component {
           </div>
         </div>
         <Provider store={store}>
-          <Juego />
+          <div>
+            <p>Pagina en proceso...</p>
+          </div>
         </Provider>
         <RickandMorty />
         <div className="create-container">

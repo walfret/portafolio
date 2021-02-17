@@ -36,3 +36,12 @@
   display: initial;
   margin-top: 0;
 }
+
+.btn-rick {
+  position: relative;
+}
+
+.flecha-btn {
+  position: fixed;
+  transform: rotate(180deg);
+}

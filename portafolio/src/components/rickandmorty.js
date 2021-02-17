@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/juego.css";
 
 import Loader from "./loader";
+import flecha from "./images/flecha-hacia-abajo-esbozada.svg";
 
 class rickandmorty extends React.Component {
   state = {
@@ -62,7 +63,7 @@ class rickandmorty extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="rickAndMorty">
+        <div id="title-rick" className="rickAndMorty">
           <h1>Rick y Morty</h1>
           <div className="character-container">
             {this.state.data.results.map((character) => (
@@ -84,6 +85,13 @@ class rickandmorty extends React.Component {
             </div>
           )}
           {!this.state.loading && this.buttonCharacters()}
+          {!this.state.loading && (
+            <div className="btn-rick">
+              <a href="#title-rick" className="button">
+                <img className="flecha-btn" src={flecha} alt="flecha" />
+              </a>
+            </div>
+          )}
         </div>
       </React.Fragment>
     );

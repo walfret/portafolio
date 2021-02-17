@@ -13,6 +13,7 @@ class App extends React.Component {
       <BrowserRouter>
         <React.Fragment>
           <Switch>
+            <Redirect from="/portafolio" to="/" />
             <Route exact path="/" component={Home} />
             <Route path="/me" component={Layout} />
             <Route path="/api" component={Api} />
